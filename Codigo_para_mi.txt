@@ -1,0 +1,9 @@
+Proyecto 
+viculador>entrada
+opengl32.lib;glew32.lib;glfw3.lib;
+
+viculador>General
+lib
+
+c/c++
+include
