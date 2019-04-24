@@ -235,8 +235,12 @@ void animate(void)
 
 					
 					if (rever == false) {
-						rotKit_y = 90;
-						estado = 1;
+						rotKit_y += 3;
+						if (rotKit_y ==90) {
+							estado = 1;
+						}
+						
+						
 					}
 					else {
 						rotKit_y = 270;
@@ -255,8 +259,10 @@ void animate(void)
 
 					
 					if (rever == false) {
-						rotKit_y = 180;
-						estado = 3;
+						rotKit_y += 3;
+						if (rotKit_y == 180) {
+							estado = 3;
+						}
 					}
 					else {
 						rotKit_y = 0;
@@ -272,8 +278,10 @@ void animate(void)
 			}
 			else {
 				if (rever == false) {
-					rotKit_y = 270;
-					estado = 2;
+					rotKit_y += 3;
+					if (rotKit_y == 270) {
+						estado = 2;
+					}
 				}
 				else {
 					rotKit_y = 90;
@@ -290,8 +298,11 @@ void animate(void)
 			}
 			else {
 				if (rever == false) {
-					rotKit_y = 0;
-					estado = 0;
+					rotKit_y += 3;
+					if (rotKit_y == 360) {
+						rotKit_y = 0;
+						estado = 0;
+					}
 				}
 				else {
 					rotKit_y = 180;
